@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armando Físicos</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0b0b0b;
+color:white;
+scroll-behavior:smooth;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#000;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid #222;
+}
+
+.brand{
+font-weight:700;
+font-size:20px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+margin:0;
+padding:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+opacity:.8;
+}
+
+nav a:hover{opacity:1}
+
+header{
+text-align:center;
+padding:110px 20px 90px;
+background:radial-gradient(circle at top,#1a1a1a,#000);
+}
+
+.logo{
+width:230px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:46px;
+margin:10px 0;
+}
+
+.subtitle{
+font-size:20px;
+opacity:.85;
+max-width:700px;
+margin:auto;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+background:#f0b90b;
+color:black;
+padding:16px 36px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+font-size:16px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:90px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:50px;
+font-size:34px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#151515;
+padding:30px;
+border-radius:14px;
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#1c1c1c;
+}
+
+.about{
+max-width:750px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+text-align:center;
+}
+
+.challenge{
+background:#111;
+border-radius:14px;
+padding:40px;
+text-align:center;
+max-width:700px;
+margin:auto;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+margin-top:40px;
+text-align:center;
+}
+
+.stat{
+background:#141414;
+padding:25px;
+border-radius:12px;
+}
+
+.stat h3{
+font-size:32px;
+margin:0;
+color:#f0b90b;
+}
+
+.transformations{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.transformation img{
+width:100%;
+border-radius:10px;
+}
+
+.videos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+iframe{
+width:100%;
+height:200px;
+border-radius:10px;
+border:none;
+}
+
+.routines{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.routine{
+background:#151515;
+padding:25px;
+border-radius:12px;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+background:#000;
+opacity:.8;
+font-size:14px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(0,0,0,.6);
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:700px){
+
+nav ul{display:none}
+
+h1{font-size:34px}
+
+.subtitle{font-size:17px}
+
+}
+
+</style></head><body><nav>
+<div class="brand">Armando Físicos</div>
+<ul>
+<li><a href="#beneficios">Beneficios</a></li>
+<li><a href="#reto">Reto</a></li>
+<li><a href="#rutinas">Rutinas</a></li>
+<li><a href="#videos">Ejercicios</a></li>
+</ul>
+</nav><header class="reveal"><img src="logo.png" class="logo" alt="logo"><h1>ARMANDO FÍSICOS</h1><p class="subtitle">
+Construye fuerza, disciplina y confianza con calistenia. Entrena en cualquier lugar usando solo tu peso corporal.
+</p><a class="btn" href="#reto">Comenzar Reto 30 Días</a>
+
+</header><section id="beneficios" class="reveal"><h2>Beneficios de la Calistenia</h2><div class="cards"><div class="card">
+<h3>💪 Fuerza Real</h3>
+<p>Desarrolla músculo usando tu propio peso corporal.</p>
+</div><div class="card">
+<h3>⚡ Energía</h3>
+<p>Mejora tu resistencia y condición física.</p>
+</div><div class="card">
+<h3>🧠 Disciplina</h3>
+<p>Entrenar construye mentalidad fuerte.</p>
+</div><div class="card">
+<h3>🏠 Sin gimnasio</h3>
+<p>Entrena en casa o en el parque.</p>
+</div></div></section><section class="reveal"><h2>¿Quién soy?</h2><p class="about">
+Hola, soy Armando Ojeda. Practico calistenia hace varios años y decidí crear Armando Físicos para ayudar a otras personas a transformar su cuerpo y su mentalidad.
+</p><div class="stats"><div class="stat">
+<h3 id="years">0</h3>
+<p>Años entrenando</p>
+</div><div class="stat">
+<h3 id="people">0</h3>
+<p>Personas ayudadas</p>
+</div><div class="stat">
+<h3 id="videoscount">0</h3>
+<p>Rutinas creadas</p>
+</div></div></section><section id="reto" class="reveal"><h2>Reto 30 Días</h2><div class="challenge"><h3>Transforma tu cuerpo en 30 días</h3><p>
+Entrenamientos simples, progreso semanal y comunidad motivada.
+</p><a class="btn" href="https://chat.whatsapp.com/" target="_blank">Unirme al reto</a>
+
+</div></section><section id="rutinas" class="reveal"><h2>Rutinas básicas</h2><div class="routines"><div class="routine">
+<h3>Principiante</h3>
+<p>10 flexiones<br>10 sentadillas<br>10 abdominales<br>3 rondas</p>
+</div><div class="routine">
+<h3>Intermedio</h3>
+<p>20 flexiones<br>20 sentadillas<br>15 dominadas<br>4 rondas</p>
+</div><div class="routine">
+<h3>Avanzado</h3>
+<p>30 flexiones<br>25 dominadas<br>40 sentadillas<br>5 rondas</p>
+</div></div></section><section id="videos" class="reveal"><h2>Ejercicios</h2><div class="videos"><iframe src="https://www.youtube.com/embed/IODxDxX7oi4"></iframe><iframe src="https://www.youtube.com/embed/eGo4IYlbE5g"></iframe><iframe src="https://www.youtube.com/embed/2pLT-olgUJs"></iframe></div></section><footer>
+© 2026 Armando Físicos
+</footer><a class="whatsapp" href="https://wa.me/595" target="_blank">💬</a>
+
+<script>
+
+const reveals=document.querySelectorAll(".reveal");
+
+function reveal(){
+
+for(let i=0;i<reveals.length;i++){
+
+let windowHeight=window.innerHeight;
+let elementTop=reveals[i].getBoundingClientRect().top;
+
+if(elementTop<windowHeight-100){
+reveals[i].classList.add("active");
+}
+
+}
+
+}
+
+window.addEventListener("scroll",reveal);
+
+function counter(id,end,speed){
+let obj=document.getElementById(id);
+let count=0;
+let interval=setInterval(()=>{
+count++;
+obj.innerText=count;
+if(count==end)clearInterval(interval);
+},speed);
+}
+
+counter("years",4,200);
+counter("people",120,20);
+counter("videoscount",50,30);
+
+</script></body>
+</html>
